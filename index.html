@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Photography</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"/>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo">📸 My Photography</h1>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Capture Moments</h2>
+      <p>Through the lens of passion.</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="nature">Nature</button>
+      <button class="filter-btn" data-category="portrait">Portrait</button>
+      <button class="filter-btn" data-category="travel">Travel</button>
+    </div>
+    <div class="grid">
+      <a href="https://source.unsplash.com/800x600/?nature" data-lightbox="gallery" data-title="Nature">
+        <img src="https://source.unsplash.com/400x300/?nature" class="gallery-item" data-category="nature" alt="Nature" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?portrait" data-lightbox="gallery" data-title="Portrait">
+        <img src="https://source.unsplash.com/400x300/?portrait" class="gallery-item" data-category="portrait" alt="Portrait" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?travel" data-lightbox="gallery" data-title="Travel">
+        <img src="https://source.unsplash.com/400x300/?travel" class="gallery-item" data-category="travel" alt="Travel" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?mountain" data-lightbox="gallery" data-title="Nature">
+        <img src="https://source.unsplash.com/400x300/?mountain" class="gallery-item" data-category="nature" alt="Nature" />
+      </a>
+      <a href="https://source.unsplash.com/800x600/?city" data-lightbox="gallery" data-title="Travel">
+        <img src="https://source.unsplash.com/400x300/?city" class="gallery-item" data-category="travel" alt="Travel" />
+      </a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate photographer with a love for capturing candid and real moments. I specialize in nature, portrait, and travel photography.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Photography | All rights reserved</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
